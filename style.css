@@ -1,0 +1,760 @@
+/********************
+共通スタイル
+********************/
+html {
+  margin: 0px;
+}
+
+main {
+  background-color: #3eb4f2;
+}
+
+.container-fluid {
+  padding: 50px;
+}
+
+/* bodyの余白をなくす */
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #3eb4f2;
+}
+/******************************
+*******************************
+ナビゲーションメニュー 
+*******************************
+******************************/
+.header_container {
+  padding-top: 15px;
+}
+
+.header_a {
+  color: yellow;
+  background-color: #3eb4f2;
+}
+.header_a > .container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/**ロゴ**/
+.area_logo_header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_logo_block {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_suzu {
+  padding-top: 2px;
+}
+
+.area_logo_header .logo img {
+  vertical-align: bottom;
+}
+.nav_name {
+  text-decoration: none;
+  color: #fffff9;
+  font-weight: bold;
+}
+
+.nav_name a:hover {
+  text-decoration: underline;
+  }
+
+.icon_img {
+ /** max-width: 60px;
+  max-height: 60px;**/
+  height: 60px;
+  max-width: 20px;
+  max-height: 20px;
+}
+/**ナビゲーション**/
+.area_nav_header {
+  margin-left: auto;
+}
+/*リストナビ*/
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list_nav_header > li + li {
+  margin-left: 40px;
+}
+
+.list_nav_header a {
+  color: #fffff9;
+  font: 500 15px/1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.list_nav_header a:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header_container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .nav_name {
+    text-decoration: none;
+    color: #fffff9;
+    font-size: 14px;
+  }
+
+  .header_list {
+    font-size: 14px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+  
+  .icon_img {
+    /** max-width: 60px;
+     max-height: 60px;**/
+     height: 60px;
+     max-width: 20px;
+     max-height: 20px;
+   }
+
+}
+
+@media (max-width:551px) {
+  .header_container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .nav_name p {
+    text-decoration: none;
+    color: #fffff9;
+    font-size: 12px;
+  }
+
+  .header_list {
+    font-size: 12px;
+  }
+  
+  .icon_img {
+    /** max-width: 60px;
+     max-height: 60px;**/
+     height: 60px;
+     max-width: 20px;
+     max-height: 20px;
+   }
+
+   .nav_suzu {
+    padding-top: 1px;
+  }
+
+}
+
+/* メニューの余白 */
+.menu {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline;
+}
+
+/* 名前 */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 34px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: rgb(255, 255, 99);
+    color: #3eb4f2;
+
+}
+
+p {
+  font-size: 18px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+li {
+  font-size: 18px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+a {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* divの 不要な空白を削除 */
+div {
+  font-size: 0;
+}
+
+/*******************
+********************
+メイン画像 
+********************
+*******************/
+
+.main_image_container {
+  padding-top: 80px;
+}
+
+.main_img_block {
+  display: grid;
+  place-items: center;
+}
+
+.mainpic {
+  height: auto;
+  width: 75%;
+ /** width: 75%;
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 700px;**/
+}
+
+img {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+/*********************
+      About 
+**********************/
+#about {
+  background-color: rgb(255, 255, 99);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about {
+  padding: 10px;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+}
+
+.about_li {
+  color: rgb(255, 255, 99);
+  list-style: none;
+}
+
+.about_motchi_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 丸く切り取る画像 */
+.circle {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 4px solid rgb(178, 252, 20);
+  padding: 3px;
+}
+
+.name {
+  text-align: center;
+  color: #fffff9;
+}
+
+.about_name {
+  padding: 20px 0px;
+}
+
+.about_ul {
+  align-items: center;
+  padding-left: 0px;
+}
+
+.about_motchi_subcontent {
+  padding-left: 150px;
+}
+
+/************************
+*************************
+VOICE SAMPLE
+*************************
+************************/
+#sample {
+  background-color: rgb(255, 255, 99);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sample_sub_container {
+  padding: 12px 50px 12px 50px;
+}
+
+/**youtube動画のレスポンシブ**/
+.sample_motchi_block {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 10px 20px 10px 20px;
+}
+.sample_motchi_block iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/************************
+*************************
+form
+*************************
+************************/
+
+#forms_top {
+  background-color: rgb(255, 255, 99);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form_sub_block {
+  padding: 30px 150px 30px 150px;
+}
+
+
+/********************************
+*********************************
+フッター
+*********************************
+********************************/
+.footer {
+  background-color: rgba(22, 127, 255, 0.933);
+}
+
+.footer_section {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+
+.footer_left {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer_right {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer_right_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 60px;
+}
+
+.footer_link_block {
+  display: flex;
+  flex-direction: row;
+}
+
+.tonndora_icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.footer_link_icon {
+  padding-top: 5px;
+}
+
+.footer_link_a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_link_a a:hover {
+  text-decoration: underline;
+  }
+
+.footer_p {
+  color: #fffff9;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.footer_h {
+  color: #fffff9;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .footer_section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .footer_left {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .footer_right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .footer_right_block {
+    padding-left: 0px;
+  }
+}
+
+/**@media (max-width: 650px) {
+  .footer {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer_left {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .footer_right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+}**/
+/************************************
+*************************************
+        プロフィールページ
+*************************************
+************************************/
+
+/*--------------------------------------
+  カード型_02
+--------------------------------------*/
+.l-wrapper_02 {
+  margin: 1rem auto;
+  width: 380px;
+}
+.card-radius_02{
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  padding: 12px;
+}
+
+.card_02 {
+  background-color: #fff;
+  box-shadow: 0 0 0px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  margin: 40px;
+}
+
+.card__header_02 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__title_02 {
+  padding: 1rem 1.5rem 0;
+  margin-bottom: 4px;
+  font-size: 1.6rem;
+  order: 1;
+  font-weight: bold;
+  text-decoration: none;
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 3px black;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.card__thumbnail_02 {
+  margin: 0;
+  order: 0;
+  display: grid;
+  place-items: center;
+}
+
+.card__image_02 {
+  width: 100%;
+}
+
+.card__body_02 {
+  padding:  1.5rem;
+}
+
+.card__text_02 {
+  font-size: .8rem;
+  text-align:center;
+  text-decoration: none;
+}
+
+.card__text2_02 {
+  font-size: .8rem;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding: 5px 0px 5px 0px;
+  font: #0f1419 ;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+}
+
+.profile_main {
+  padding: 100px 300px 100px 300px;
+}
+
+.profile_section {
+  background-color: #3eb4f2;
+}
+
+.profile_section {
+  display: grid;
+  gap: 100px 20px;
+}
+
+@media (max-width: 1400px) {
+  .profile_main {
+    padding: 75px 150px 75px 150px;
+  }
+  
+}
+
+@media (max-width: 991px) {
+
+  .profile_game_section {
+    padding-bottom: 0px;
+  }
+  
+
+  .profile_main {
+    padding: 50px;
+  }
+
+  .motchi_profile_img {
+    margin-right: 0px;
+  }
+
+  .profile_main_title {
+    margin-left: 0px auto 0px 0px;
+  }
+
+  .profile_text  {
+    padding: 20px;
+  }
+
+  .profile_text_game  {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .card_02 {
+    margin: 20px;
+  }
+}
+/************************************
+*************************************
+        出演履歴ページ
+*************************************
+************************************/
+.work-main {
+  background-color: #3eb4f2;
+}
+
+.work_section {
+  padding: 50px;
+  background-color: #3eb4f2;
+}
+
+.work_main_block {
+  padding-bottom: 50px;
+}
+
+.work_content {
+ background-color: rgb(255, 255, 99);
+ box-shadow: 0 0 0px rgba(0, 0, 0, .16);
+ border-radius: 8px;
+}
+
+.work_p {
+  padding: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #0f1419;
+}
+
+.work_title_block {
+  max-width: 300px;
+}
+
+.profile_title {
+  position: relative;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border: 3px solid #333;
+  font-weight: bold;
+  font-size: 26px;
+  background-color: #fffff9;
+  display: grid;
+  place-items: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.profile_title:before,
+.profile_title:after {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  content: "";
+}
+
+.profile_title:before {
+  margin-left: -12px;
+  border-color: transparent;
+  border-top-color: #333;
+  border-width: 12px;
+}
+
+.profile_title:after {
+  margin-left: -8px;
+  border-color: transparent;
+  border-top-color: white;
+  border-width: 8px;
+}
+/**************************
+***************************
+CONTACT
+***************************
+**************************/
+.archive_forms_top {
+  margin-bottom: 0px;
+}
+
+.archive_forms_section {
+  background-color: #3eb4f2;
+}
+
+.archiveform_main_block {
+  padding: 20px;
+}
+
+
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+ 
+ /* メイン画像 */
+.mainpic {
+  width: 80%;
+  max-height: 350px;
+  min-height: 200px;
+  /*height: 400px;*/
+}
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .form_sub_block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* TOPに戻るボタン */
+#page-top {  
+  max-width: 2%;
+  max-height: 2%;
+  position: fixed;
+  bottom: 38px;
+  right: 0px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;  
+  border-radius: 50%;
+  display: none;
+}
+
+ 
+}
+
+/*======== jQuery発展編ここから ========*/
+
+/* slick */
+.slider {
+  /* ul要素の不要なパディングを削除する */
+  padding: 0;
+}
+
+/* TOPに戻るボタン */
+#page-top {  
+  max-width: 10%;
+  min-width: 5%; 
+  max-height: 10%;
+  min-height: 5%;
+  position: fixed;
+  bottom: 38px;
+  right: 0px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px;  
+  border-radius: 50%;
+  display: none;
+}
+
+/* スクロール時のフェードイン */
+section {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.big-img {
+  position: absolute;  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  width: 80%;
+  max-width: 800px;  
+  margin: auto;  
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;  
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+/*======== jQuery発展編ここまで ========*/
